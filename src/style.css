@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gafata", sans-serif;
+}
+
+body {
+    background-color: rgb(212, 212, 212);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+.home-header {
+    background-color: #f74c02;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 90%;
+    height: 90%;
+}
+
+.btn-nav-menu {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-image: url('../img/img-menu-nav.png');
+    background-size: cover;
+    margin-right: 15px;
+}
+
+.btn-pagina-inicial,
+.btn-contratar-mao-obra,
+.btn-sobre-nos {
+    display: none;
+}
+
+.menu-bar-mobile {
+    display: none;
+    background-color: #000;
+    width: 50vw;
+    height: 250vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-bar-mobile li:first-child {
+    margin-top: 70px;
+
+}
+
+.menu-bar-mobile li {
+    color: #f74c02;
+    list-style-type: none;
+    font-size: 23px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-bar-mobile li:hover {
+    color: white;
+}
+
+.btn-close-menu-mobile {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    background-image: url('../img/btn-close.svg');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+section h1,
+h2 {
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 23px;
+    padding: 0 15px 15px 15px;
+}
+
+.home-welcome {
+    height: auto;
+}
+
+.welcome-logo-ecommerce {
+    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.welcome-logo-ecommerce img {
+    width: 90%;
+    height: 90%;
+}
+
+.home-contratar-mao-obra {
+    height: auto;
+}
+
+.form-contratar {
+    width: 90%;
+    height: 400px;
+    background-color: #000;
+    color: #f74c02;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.workers {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #f74c02;
+    position: absolute;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.btn-close-workers {
+    width: 65px;
+    height: 65px;
+    background-color: #f80e22;
+    background-image: url('../img/btn-close.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+}
+
+.card-worker {
+    width: 95%;
+    height: 300px;
+    background-color: #000;
+    color: white;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.card-worker li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.btn-finalizar-contrato {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #04ff3a;
+    padding: 15px;
+    border-radius: 20px;
+
+}
+
+.btn-pesquisar-funcionario {
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: #f74c02;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.btn-pesquisar-funcionario:hover {
+    background-color: rgb(212, 212, 212);
+    color: #f74c02;
+}
+
+.form-contratar label {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+select,
+input {
+    width: 80%;
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input {
+    cursor: text;
+}
+
+option {
+    font-size: 25px;
+}
+
+.home-sobre {
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.home-footer {
+    background-color: #f74c02;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-footer span {
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+@media (min-width: 300px) {}
+
+@media (min-width: 576px) {
+    .btn-nav-menu {
+        display: none;
+    }
+
+    .home-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .principal-menu {
+        margin-left: 20px;
+        height: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .form-contratar {
+        width: 80%;
+    }
+
+    .btn-pagina-inicial,
+    .btn-contratar-mao-obra,
+    .btn-sobre-nos {
+        display: inline;
+        background-color: transparent;
+        font-size: 23px;
+        font-weight: bold;
+
+    }
+
+    .btn-pagina-inicial:hover,
+    .btn-contratar-mao-obra:hover,
+    .btn-sobre-nos:hover {
+        transform: none;
+        text-decoration: underline;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+
+    .btn-pagina-inicial,
+    .btn-contratar-mao-obra,
+    .btn-sobre-nos {
+        font-size: 30px;
+    }
+
+
+    .form-contratar {
+        width: 600px;
+    }
+
+    .home-footer span {
+        font-size: 30px;
+    }
+
+
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+.text-orange {
+    color: #f74c02;
+}
