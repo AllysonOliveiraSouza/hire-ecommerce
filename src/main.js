@@ -48,6 +48,7 @@ let workers = document.querySelector('.workers');
 btnPesquisarFuncionario.addEventListener('click', () => displayBlock(workers));
 btnCloseWorkers.addEventListener('click', () => displayNone(workers));
 
+
 cardWorkers = document.querySelectorAll('.card-worker');
 let btnFinalizarContrato = document.querySelectorAll('.btn-finalizar-contrato');
 
